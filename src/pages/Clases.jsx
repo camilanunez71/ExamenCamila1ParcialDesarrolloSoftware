@@ -8,7 +8,7 @@ const modulos = [
   {
     id: 2,
     titulo: "Auditoria de Gestion",
-    descripcion: "Se realizaran auditorias a las empresas o escuelas que cuentes con un centro de datos",
+    descripcion: "Se realizaran auditorias a las empresas o escuelas que cuenten con un centro de datos",
     imagen: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
   },
   {
