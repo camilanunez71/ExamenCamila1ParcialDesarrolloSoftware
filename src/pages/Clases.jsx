@@ -56,7 +56,7 @@ export default function Clases() {
   return (
     <div>
       <h3 style={{ fontSize: "20px", marginBottom: "18px" }}>
-        Módulos disponibles
+        Modulos disponibles
       </h3>
       <div style={estilos.grid}>
         {modulos.map((m) => (
