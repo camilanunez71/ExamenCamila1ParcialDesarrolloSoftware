@@ -1,0 +1,95 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #e2e8f0;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  gap: 5px;
+  padding: 5px;
+  background: #000;
+}
+
+/* Barra lateral */
+.sidebar {
+  width: 275px;
+  flex-shrink: 0;
+  background: #1e293b;
+}
+.sidebar-usuario {
+  background: #1e3f82;
+  height: 98px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #dbe7ff;
+}
+.enlace {
+  display: block;
+  padding: 16px 20px;
+  margin-top: 14px;
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 18px;
+}
+.enlace:hover { background: #2a3a55; }
+.enlace.activo { background: #2a3a55; }
+
+/* Zona principal */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.topbar {
+  background: #1e293b;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topbar h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #e8ecf5;
+}
+.contenido {
+  flex: 1;
+  background: #0f172a;
+  padding: 36px 30px;
+}
+
+/* Textos de inicio */
+.inicio-titulo { font-size: 20px; margin-bottom: 18px; }
+.inicio-texto { font-size: 20px; }
+
+/* Tarjetas */
+.grid-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.tarjeta {
+  background: #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #2a3a55;
+  transition: transform 0.2s;
+}
+.tarjeta:hover { transform: translateY(-4px); }
+.tarjeta h4 { font-size: 18px; margin-bottom: 10px; color: #fff; }
+.tarjeta p { font-size: 15px; margin-bottom: 6px; color: #cbd5e1; }
+.badge {
+  display: inline-block;
+  margin-top: 8px;
+  background: #1e3f82;
+  color: #dbe7ff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
